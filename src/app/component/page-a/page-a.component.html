@@ -1,0 +1,8 @@
+<main>
+  <div class="quotes_container" *ngFor="let quote of quotes">
+    <p>
+      {{ quote[number].dialog }}
+    </p>
+  </div>
+  <button (click)="realodPage()">Generate another</button>
+</main>

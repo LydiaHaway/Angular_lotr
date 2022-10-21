@@ -1,0 +1,29 @@
+main {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+
+  .quotes_container {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 10rem;
+
+    p {
+      color: rgb(158, 151, 151);
+    }
+  }
+
+  button {
+    background-color: #056952;
+    color: rgb(158, 151, 151);
+    padding: 0.3rem;
+    border: none;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

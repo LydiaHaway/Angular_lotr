@@ -1,0 +1,61 @@
+form {
+  text-align: center;
+
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  .name {
+    margin-bottom: 2rem;
+    input {
+      width: 30rem;
+      height: 2rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.5rem;
+      background-color: rgb(64, 64, 69);
+      color: #056952;
+      padding: 0.5rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .text {
+    margin-bottom: 1.5rem;
+    textarea {
+      width: 30rem;
+      height: 10rem;
+      resize: none;
+      background-color: rgb(64, 64, 69);
+      color: white;
+      padding: 0.5rem;
+      border: none;
+      font-size: 1rem;
+      border-radius: 4px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  input[type="submit"] {
+    width: 5rem;
+    height: 1.5rem;
+    border: none;
+    text-transform: uppercase;
+    font-size: bold;
+    background-color: #056952;
+    transition: all 0.2s ease-in-out;
+    color: rgb(159, 152, 152);
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

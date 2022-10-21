@@ -1,0 +1,21 @@
+<form (ngSubmit)="onSubmit()">
+  <h2>Write something about your fave!</h2>
+  <div class="name">
+    <input
+      type="text"
+      name="name"
+      [(ngModel)]="name"
+      id="name"
+      placeholder="name"
+    />
+  </div>
+  <div class="text">
+    <textarea
+      name="text"
+      id="text"
+      [(ngModel)]="text"
+      placeholder="..."
+    ></textarea>
+  </div>
+  <input type="submit" value="Send" />
+</form>

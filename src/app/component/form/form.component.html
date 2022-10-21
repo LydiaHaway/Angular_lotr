@@ -1,0 +1,8 @@
+<app-add-fave (onAddFave)="addFave($event)"></app-add-fave>
+<div class="fave_list_container">
+  <app-fave-list
+    *ngFor="let fave of faves"
+    [fave]="fave"
+    (onDeleteFave)="deleteFave(fave)"
+  ></app-fave-list>
+</div>
