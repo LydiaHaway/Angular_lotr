@@ -4,6 +4,11 @@
       "name": "Elrond",
       "text": "Simply the Best! ",
       "id": 1
+    },
+    {
+      "name": "Aragorn",
+      "text": "The true King",
+      "id": 2
     }
   ]
 }
