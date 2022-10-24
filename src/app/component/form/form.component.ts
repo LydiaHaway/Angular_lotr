@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Fave } from 'src/app/Fave';
+import { Fave } from 'src/app/Model/Fave';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({

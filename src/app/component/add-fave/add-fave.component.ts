@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { Fave } from 'src/app/Fave';
+import { Fave } from 'src/app/Model/Fave';
 
 @Component({
   selector: 'app-add-fave',

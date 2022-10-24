@@ -7,9 +7,13 @@
           | paginate: { itemsPerPage: 24, currentPage: page, totalItems: total }
       "
     >
-      <h2>{{ character.name }}</h2>
+      <div class="box-contain">
+        <h2>{{ character.name }}</h2>
+        <br />
+        <p>{{ character.race }}</p>
+      </div>
       <br />
-      <p>{{ character.race }}</p>
+      <button (click)="OpenModal(character)">Show More</button>
     </div>
   </div>
   <pagination-controls

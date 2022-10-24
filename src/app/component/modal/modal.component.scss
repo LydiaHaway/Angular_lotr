@@ -1,0 +1,47 @@
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+
+  .modal-content {
+    background-color: rgb(45, 45, 48);
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid #056952;
+    border-radius: 5px;
+    width: 30rem;
+    text-align: center;
+    color: white;
+    button {
+      width: 5rem;
+      height: 1.5rem;
+      border: none;
+      text-transform: uppercase;
+      font-size: bold;
+      background-color: #056952;
+      transition: all 0.2s ease-in-out;
+      color: rgb(159, 152, 152);
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    a {
+      cursor: pointer;
+    }
+
+    hr {
+      width: 90%;
+      margin: 0 auto;
+      opacity: 0.1;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

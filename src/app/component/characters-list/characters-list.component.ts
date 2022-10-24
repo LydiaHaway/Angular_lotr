@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { Character } from 'src/app/Model/Character';
 import { DataService } from 'src/app/services/data.service';
+import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-characters-list',
@@ -19,7 +22,7 @@ export class CharactersListComponent implements OnInit {
     );
   }
 
-  constructor(private DataService: DataService) {}
+  constructor(private DataService: DataService, private matdialog: MatDialog) {}
 
   ngOnInit(): void {
     this.getCharacter();
@@ -29,5 +32,26 @@ export class CharactersListComponent implements OnInit {
     this.DataService.getCharacter(900, 1, 1).subscribe((response: any) =>
       this.characters.push(response.docs)
     );
+  }
+
+  OpenModal(character: Character) {
+    const modal = this.matdialog.open(ModalComponent, {
+      enterAnimationDuration: '10ms',
+      exitAnimationDuration: '1500ms',
+      data: {
+        name: character.name,
+        birth: character.birth,
+        death: character.death,
+        gender: character.gender,
+        height: character.height,
+        race: character.race,
+        realm: character.realm,
+        spouse: character.spouse,
+        wikiUrl: character.wikiUrl,
+      },
+    });
+    modal.afterClosed().subscribe((item) => {
+      console.log(item);
+    });
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Fave } from 'src/app/Fave';
+import { Fave } from 'src/app/Model/Fave';
 
 @Component({
   selector: 'app-fave-list',
