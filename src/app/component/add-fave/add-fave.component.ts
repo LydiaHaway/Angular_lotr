@@ -11,6 +11,7 @@ export class AddFaveComponent implements OnInit {
   @Output() onAddFave: EventEmitter<Fave> = new EventEmitter();
   name!: string;
   text!: string;
+  img!: string;
 
   constructor() {}
 
@@ -25,11 +26,13 @@ export class AddFaveComponent implements OnInit {
     const newFave = {
       name: this.name,
       text: this.text,
+      img: this.img,
     };
 
     this.onAddFave.emit(newFave);
 
     this.name = '';
     this.text = '';
+    this.img = '';
   }
 }

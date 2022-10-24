@@ -2,12 +2,14 @@
   "faves": [
     {
       "name": "Elrond",
-      "text": "Simply the Best! ",
+      "text": "Simply the best!",
+      "img": "https://pbs.twimg.com/media/FLPmMm_VkAgVgTs.jpg",
       "id": 1
     },
     {
       "name": "Aragorn",
-      "text": "The true King",
+      "text": "True King",
+      "img": "https://i.kinja-img.com/gawker-media/image/upload/q_75,w_1600,h_900,c_fill/b9a0649afb0e468425c5b5c6b3369d4e.JPG",
       "id": 2
     }
   ]

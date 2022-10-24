@@ -8,11 +8,19 @@ main {
     text-align: center;
     margin-bottom: 3rem;
     margin-top: 10rem;
-    height: 60vh;
+    border: 2px solid #056952;
+    border-radius: 5px;
+    width: 75%;
+    padding-top: 2rem;
+    margin-bottom: 25rem;
+    background-color: rgb(36, 36, 39);
+    padding-right: 2rem;
+    padding-left: 2rem;
 
     p {
       color: rgb(158, 151, 151);
-      margin-bottom: 3rem;
+      margin-bottom: 10rem;
+      margin-top: 5rem;
     }
 
     button {

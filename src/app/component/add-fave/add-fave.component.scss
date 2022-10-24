@@ -18,6 +18,10 @@ form {
       color: #056952;
       padding: 0.5rem;
 
+      @media screen and (max-width: 700px) {
+        width: 90%;
+      }
+
       &:focus {
         outline: none;
       }
@@ -36,6 +40,10 @@ form {
       border: none;
       font-size: 1rem;
       border-radius: 4px;
+
+      @media screen and (max-width: 700px) {
+        width: 90%;
+      }
 
       &:focus {
         outline: none;
