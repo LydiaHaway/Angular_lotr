@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-page-a',
@@ -7,7 +8,14 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./page-a.component.scss'],
 })
 export class PageAComponent implements OnInit {
-  constructor(private DataService: DataService) {}
+  constructor(private DataService: DataService, private http: HttpClient) {}
+
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      Authorization: `Bearer FT3Ka6j6mhMvtLgrVR09`,
+    }),
+  };
 
   quotes: any[] = [];
   number: number = Math.floor(Math.random() * (1000 + 1));

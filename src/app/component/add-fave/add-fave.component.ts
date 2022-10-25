@@ -18,7 +18,7 @@ export class AddFaveComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit() {
-    if (!this.name && !this.text) {
+    if (!this.name && !this.text && !this.img) {
       alert('Please add something!');
       return;
     }

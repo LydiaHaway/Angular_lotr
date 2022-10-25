@@ -17,6 +17,7 @@ import { AddFaveComponent } from './component/add-fave/add-fave.component';
 import { FaveListComponent } from './component/fave-list/fave-list.component';
 import { ModalComponent } from './component/modal/modal.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { ModalFormComponent } from './component/modal-form/modal-form.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FooterComponent } from './component/footer/footer.component';
     FaveListComponent,
     ModalComponent,
     FooterComponent,
+    ModalFormComponent,
   ],
   imports: [
     BrowserModule,

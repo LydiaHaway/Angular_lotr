@@ -1,0 +1,39 @@
+<div class="modal">
+  <div class="modal-content">
+    <form (ngSubmit)="onSubmit(fave.id, fave)">
+      <div class="name">
+        <input
+          type="text"
+          value="{{ fave.name }}"
+          placeholder="{{ fave.name }}"
+          name="name"
+          [(ngModel)]="name"
+          id="name"
+        />
+      </div>
+      <div class="name">
+        <input
+          type="text"
+          value="{{ fave.img }}"
+          placeholder="{{ fave.img }}"
+          name="img"
+          [(ngModel)]="img"
+          id="img"
+        />
+      </div>
+      <div class="text">
+        <textarea
+          name="text"
+          value="{{ fave.text }}"
+          placeholder="{{ fave.text }}"
+          [(ngModel)]="text"
+          id="text"
+        ></textarea>
+      </div>
+      <input type="submit" value="update" />
+    </form>
+    <div>
+      <button (click)="Closepopup()">Close</button>
+    </div>
+  </div>
+</div>
